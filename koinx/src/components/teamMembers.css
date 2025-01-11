@@ -1,5 +1,5 @@
 .team-members {
-    max-width: 68%; /* Set exact width to 65% */
+    max-width: 65%; /* Set exact width to 65% */
     margin: 20px;
     padding: 20px;
     background-color: #ffffff;
@@ -77,6 +77,10 @@
 
 /* Media query for tablets and smaller screens */
 @media (max-width: 768px) {
+    .team-members {
+        max-width: 85%; /* Full width on mobile */
+        padding: 10px; /* Reduced padding for mobile */
+    }
     .member-card {
         flex-direction: column; /* Stack vertically on smaller screens */
         align-items: center;
@@ -108,6 +112,10 @@
 
 /* Media query for mobile screens */
 @media (max-width: 480px) {
+    .team-members {
+        width: 85%; /* Full width on mobile */
+        padding: 10px; /* Reduced padding for mobile */
+    }
     .member-card {
         flex-direction: column; /* Stack vertically on smaller screens */
         align-items: center;

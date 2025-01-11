@@ -1,12 +1,13 @@
 .fundamentals {
-  max-width: 100%; /* min-width set to 65% for these containers */
-  margin: 20px;
-  padding: 20px;
+  width: 65%; /* Set container width to 65% for desktop */
+  padding: 20px; /* Padding of 20px for desktop */
+  margin: 20px auto; /* Center the container */
   background-color: #ffffff;
   color: #333333;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  flex-grow: 1; /* Ensures the container expands if necessary */
+  flex-grow: 1; /* Ensure it expands if necessary */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 /* Heading styling */
@@ -73,7 +74,9 @@
 /* Mobile and tablet responsiveness */
 @media (max-width: 768px) {
   .fundamentals {
-    padding: 10px; /* Reduced padding */
+    width: 100%; /* Full width for mobile */
+    padding: 10px; /* Reduced padding for mobile */
+ /* Centered with reduced margin */
   }
 
   .fundamentals h3 {
@@ -96,7 +99,8 @@
 
 @media (max-width: 480px) {
   .fundamentals {
-    padding: 5px; /* Even smaller padding */
+    padding: 5px;
+    width: 100%; /* Even smaller padding */
   }
 
   .fundamentals h3 {

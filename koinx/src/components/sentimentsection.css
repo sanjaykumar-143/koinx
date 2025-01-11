@@ -1,5 +1,5 @@
 .sentiment-section {
-    max-width: 65%; /* min-width set to 65% for these containers */
+    max-width: 65%; /* Set the initial max-width */
     margin: 20px;
     padding: 20px;
     background-color: #ffffff;
@@ -139,7 +139,10 @@
 /* Mobile and tablet responsiveness */
 @media (max-width: 768px) {
     .sentiment-section {
-        padding: 15px;
+        padding: 10px;
+        width: 100%;
+        /* Remove margin */
+        max-width: 80%; /* Ensure it takes full width */
     }
 
     .event-card h4 {
@@ -169,6 +172,9 @@
 @media (max-width: 480px) {
     .sentiment-section {
         padding: 10px;
+        width: 100%;
+     /* Remove margin */
+        max-width: 80%; /* Ensure it takes full width */
     }
 
     .event-card {
