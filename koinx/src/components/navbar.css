@@ -1,67 +1,98 @@
-.navbar {
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
     padding: 1rem 2rem;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    z-index: 1000; /* Keeps navbar on top */
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background-color: #f1f1f1; /* Changes background when scrolling */
   }
   
   .logo {
     display: flex;
     align-items: center;
-    font-size: 32px; /* Makes the logo text big */
-    font-weight: bold; /* Makes the title bold */
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
   }
   
   .logo-text {
-    color: #1e90ff; /* Koin in blue */
+    color: #1e90ff;
+    font-size: 36px;
   }
   
   .big-x {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
-    color:rgb(245, 174, 44); /* Green shade for the 'X' */
+    color: orange;
     margin-left: 5px;
-    transform: scale(1.2); /* Slightly enlarge the 'X' */
-    font-family: 'Arial', sans-serif; /* Choose a clean, bold font */
+    transform: scale(1.1); /* Slightly enlarged */
+    font-family: 'Arial', sans-serif;
   }
   
   .nav-links {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     list-style: none;
-    margin-left: auto; /* Pushes the nav-links to the right */
+    margin-left: auto;
   }
-
- 
   
   .nav-links a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-weight: 600;
+    transition: color 0.3s ease;
   }
   
   .nav-links a:hover {
     color: #1e90ff;
   }
   
+  /* Get Started Button */
   .get-started-btn {
-    padding: 0.5rem 1.5rem;
+    padding: 0.6rem 1.6rem;
     background-color: #1e90ff;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 20px; /* Adds space between nav links and the button */
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
   }
   
   .get-started-btn:hover {
     background-color: #0b6ab8;
   }
   
-  /* Mobile Responsiveness for Navbar */
+  /* Navbar Fixed Position on Scroll */
+  @media (min-width: 768px) {
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+  }
+  
+  /* Mobile and Tablet Responsiveness */
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
@@ -69,20 +100,45 @@
     }
   
     .logo {
+      font-size: 32px;
+      text-align: center;
       margin-bottom: 1rem;
-      font-size: 28px; /* Slightly smaller logo on mobile */
-      text-align: center; /* Ensures logo is centered on mobile */
     }
   
     .nav-links {
       flex-direction: column;
       align-items: center;
-      margin-top: 10px; /* Ensures space between logo and links */
+      gap: 1rem;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .nav-links a {
+      padding: 0.5rem 0;
+      text-align: center;
+      width: 100%;
+      font-size: 18px;
     }
   
     .get-started-btn {
+      width: 100%;
       margin-top: 10px;
-      margin-left: 0; /* No margin on mobile */
+      margin-left: 0;
+    }
+  }
+  
+  /* Very Small Screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 28px;
+    }
+  
+    .nav-links a {
+      font-size: 16px;
+    }
+  
+    .get-started-btn {
+      padding: 0.5rem 1.2rem;
     }
   }
   

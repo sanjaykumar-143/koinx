@@ -33,7 +33,7 @@ const HeroSection = () => {
     <div className="hero-section">
       <div className="overview">
       <div className="header">
-        <FaBitcoin className="bitcoin-logo" size={40} />  {/* Use React icon here */}
+        <img className="imag" src="bitcoin-logo.png"/>  {/* Use React icon here */}
         <h1>
             Bitcoin <span className="btc"><sup>BTC</sup></span>
             <div className="rank">

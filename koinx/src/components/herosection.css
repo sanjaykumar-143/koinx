@@ -16,12 +16,11 @@
     display: flex;
     align-items: center;
 }
-.hero-section .overview .header .bitcoin-logo {
-    color: orange;
-    background-color: black;
-    border-radius: 50%;
-    overflow: hidden;
-}
+.hero-section .overview .header .imag {
+    height: 60px; /* Adjust height as per your design */
+    width: auto; /* Keeps the aspect ratio of the logo */
+  }
+  
 .hero-section h1 {
     font-size: 28px; 
     display: flex;
@@ -105,4 +104,8 @@
     .hero-section .chart iframe {
         height: 300px;
     }
+    .hero-section .overview .header .imag {
+        height: 40px; /* Smaller logo on mobile */
+        width: auto;
+      }
 }

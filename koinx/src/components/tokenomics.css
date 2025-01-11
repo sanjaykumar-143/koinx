@@ -1,5 +1,6 @@
+/* .tokenomics section */
 .tokenomics {
-    max-width: 68%; /* Set exact width to 65% */
+    max-width: 68%; /* Set exact width */
     margin: 20px;
     padding: 20px;
     background-color: #ffffff;
@@ -11,14 +12,15 @@
     flex-shrink: 0; /* Prevent shrinking below 65% */
 }
 
-/* Ensure the content section behaves correctly */
+/* .content section */
 .content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-bottom: 20px; /* Add space between content */
 }
 
 /* Chart container */
@@ -30,7 +32,7 @@
 
 /* Info container */
 .info-container {
-    flex: 0 0 60%;
+    flex: 0 0 60%; /* Info section takes 60% width */
     text-align: left;
     padding-top: 20px;
 }
@@ -51,11 +53,12 @@
     color: #555;
 }
 
-/* Media query for tablets and smaller screens */
+/* Media query for tablets and smaller screens (max-width: 768px) */
 @media (max-width: 768px) {
     .content {
-        flex-direction: column;
+        flex-direction: column; /* Stack content vertically */
         align-items: center;
+        margin-bottom: 0; /* Remove extra bottom space */
     }
 
     .chart-container {
@@ -64,23 +67,29 @@
     }
 
     .info-container {
-        flex: 0 0 70%;
+        flex: 0 0 70%; /* Info section takes 70% width on smaller screens */
         text-align: center;
     }
 
     .percentages {
-        font-size: 16px; /* Adjust percentage font size on mobile */
+        font-size: 16px; /* Adjust percentage font size */
     }
 
     h3 {
-        font-size: 20px; /* Adjust header font size for smaller screens */
+        font-size: 20px; /* Adjust heading font size */
+    }
+
+    .tokenomics {
+        max-width: 90%; /* Increase the width of the .tokenomics section */
+        margin: 10px;
+        padding: 15px;
     }
 }
 
-/* Media query for mobile screens */
+/* Media query for mobile screens (max-width: 480px) */
 @media (max-width: 480px) {
     .content {
-        flex-direction: column; /* Stack elements on mobile screens */
+        flex-direction: column; /* Stack content vertically */
         align-items: center;
     }
 
@@ -90,7 +99,7 @@
     }
 
     .info-container {
-        flex: 0 0 90%; /* Make info container take more space on small screens */
+        flex: 0 0 90%; /* Info container takes more space on small screens */
         text-align: center;
     }
 
@@ -99,6 +108,12 @@
     }
 
     h3 {
-        font-size: 18px; /* Further reduce header font size on mobile */
+        font-size: 18px; /* Further reduce header font size */
+    }
+
+    .tokenomics {
+        max-width: 95%; /* Allow .tokenomics to take full width on very small screens */
+        padding: 10px;
     }
 }
+
