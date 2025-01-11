@@ -1,5 +1,5 @@
 .fundamentals {
-  width: 65%; /* Set container width to 65% for desktop */
+  width: 100%; /* Set container width to 65% for desktop */
   padding: 20px; /* Padding of 20px for desktop */
   margin: 20px auto; /* Center the container */
   background-color: #ffffff;

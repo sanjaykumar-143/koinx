@@ -37,7 +37,8 @@
     border-radius: 8px;
     cursor: pointer;
     text-align: center;
-    margin-top: 20px; /* Space between button and content */
+    margin-top: 20px;
+    text-decoration: none; /* Space between button and content */
 }
 
 .trending-coins ul {

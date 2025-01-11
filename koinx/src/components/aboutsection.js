@@ -34,7 +34,7 @@ const AboutSection = () => {
           <div className="template-content">
             <h4>Calculate Your Profits</h4>
             <p>Analyze your Bitcoin investments and calculate the profits you have made so far.</p>
-            <button className="template-button">Click Now →</button>
+            <a className="template-button" href='https://coincodex.com/profit-calculator/bitcoin/'>Click Now →</a>
           </div>
         </div>
 
@@ -46,7 +46,7 @@ const AboutSection = () => {
           <div className="template-content">
             <h4>Calculate Your Tax Liability</h4>
             <p>Determine the tax you owe on your Bitcoin holdings with ease.</p>
-            <button className="template-button">Click Now →</button>
+            <a className="template-button" href='https://www.calculator.net/tax-calculator.html'>Click Now →</a>
           </div>
         </div>
       </div>

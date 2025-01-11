@@ -2,7 +2,7 @@
 .about-section {
     width: 65%; /* Ensure the width is 65% on desktop */
     padding: 20px; /* Padding of 20px for desktop */
-    margin: 20px auto; /* Center the container */
+    margin: 20px; /* Center the container */
     background-color: #ffffff;
     color: #333333;
     border-radius: 10px;
@@ -83,7 +83,8 @@
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 40%; /* Center the button */
+    margin-left: 40%;
+    text-decoration: none; /* Center the button */
 }
   
 .template-button:hover {
