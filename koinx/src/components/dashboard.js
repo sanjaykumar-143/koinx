@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { FaBitcoin } from "react-icons/fa";  
 import axios from "axios";
-import "./herosection.css";
+import "./dashboard.css";
 
-const HeroSection = () => {
+const Dashboard = () => {
   const [bitcoinData, setBitcoinData] = useState({
     usd: 0,
     usdChange: 0,
@@ -63,4 +63,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Dashboard;

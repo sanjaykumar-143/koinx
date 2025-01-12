@@ -126,7 +126,7 @@
     }
 
     .hero-section .chart iframe {
-        height: 300px; /* Smaller iframe height on tablets */
+        height: 400px; /* Smaller iframe height on tablets */
     }
 
     .hero-section .overview .header .imag {
@@ -159,7 +159,7 @@
     }
 
     .hero-section .chart iframe {
-        height: 250px; /* Adjust iframe height for very small screens */
+        height: 350px; /* Adjust iframe height for very small screens */
     }
 
     .hero-section .overview .header .imag {

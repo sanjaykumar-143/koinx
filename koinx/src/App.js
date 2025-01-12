@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar.js';
-import HeroSection from './components/herosection.js';
+import Dashboard from './components/dashboard.js';
 import TrendingCoins from './components/trendingcoin.js';
 import Performance from './components/performance.js';
 import Sentiment from './components/sentiment.js';
@@ -28,7 +28,7 @@ const App = () => {
           element={
             <>
               <div className="main-content">
-                <HeroSection />
+                <Dashboard />
                 <TrendingCoins />
               </div>
               <Performance />
