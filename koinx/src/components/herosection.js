@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaBitcoin } from "react-icons/fa";  // Import Bitcoin icon from react-icons
+import { FaBitcoin } from "react-icons/fa";  
 import axios from "axios";
 import "./herosection.css";
 
@@ -20,7 +20,7 @@ const HeroSection = () => {
         setBitcoinData({
           usd: data.usd,
           usdChange: data.usd_24h_change,
-          inr: data.inr, // Set INR price
+          inr: data.inr, 
         });
       } catch (error) {
         console.error("Error fetching Bitcoin data:", error);
@@ -33,7 +33,7 @@ const HeroSection = () => {
     <div className="hero-section">
       <div className="overview">
       <div className="header">
-        <img className="imag" src="bitcoin-logo.png"/>  {/* Use React icon here */}
+        <img className="imag" src="bitcoin-logo.png"/>  
         <h1>
             Bitcoin <span className="btc"><sup>BTC</sup></span>
             <div className="rank">

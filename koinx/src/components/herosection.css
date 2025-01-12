@@ -105,7 +105,7 @@
 @media (max-width: 768px) {
     .hero-section {
         padding: 15px; /* Padding adjustment for tablets */
-        width: 100%;
+        max-width: 90%;
     }
 
     .hero-section h1 {
@@ -139,7 +139,7 @@
 @media (max-width: 480px) {
     .hero-section {
         padding: 10px; /* Ensure consistent 10px padding */
-        width: 100%; /* Full-width for mobile */
+        max-width: 90%; /* Full-width for mobile */
     }
 
     .hero-section h1 {
